@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasya To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="todo-wrapper">
+        <h2 style="margin:0">My To Do List</h2>
+        <p style="font-style: italic;">jika sudah selesai, klik 2 kali untuk menandakan selesai</p>
+
+        <form name="todo-wrapper">
+            <input type="text" id="todo-entry-box" />
+            <input type="date" id="deadline-entry-box" />
+        </form>
+        <button id="add-button" class="pretty-button">kirim</button>
+        <br />
+        <ol id="todo-list">
+        </ol>
+        <div id="control-wrapper">
+            <button id="clear-complete-button" onclick="clearCompleteToDoItems()" class="pretty-button">
+                Hapus list
+            </button>
+            <button id="empty-button" onclick="emptyList()" class="pretty-button">
+                Kosongkan list
+            </button>
+            <button id="save-button" onclick="saveList()" class="pretty-button">
+                simpan list
+            </button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
